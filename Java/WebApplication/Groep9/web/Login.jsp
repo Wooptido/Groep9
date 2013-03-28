@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 28-mrt-2013, 13:54:35
+    Document   : Login
+    Created on : 28-mrt-2013, 13:58:41
     Author     : Tim
 --%>
 
@@ -10,7 +10,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Home</title>
+        <title>Login</title>
         <script src="JS/modernizr-1.7.min.js"></script>
         <link rel="stylesheet" href="Styles/reset.css">
         <link rel="stylesheet" href="Styles/forms.css">
@@ -26,27 +26,42 @@
             <div id="balk"> 
             <nav> 
             <ul class="menu">
-                <li class="current"><a href="index.jsp">Home</a></li>
+                <li><a href="index.jsp">Home</a></li>
                 <li><a href="festivals.jsp">Festivals</a></li>
                 <li><a href="Groepen.jsp">Groepen</a></li>
-                <li><a href="Login.jsp">Login</a></li>
+                <li class="current"><a href="Login.jsp">Login</a></li>
             </ul>
             </nav>
             </div>
             <div class="clear"></div>
         </header> 
             <div id="hoofdpaneel">
-            <h1>Welkom op dé festivalsite</h1>
- 
-            <p>Welkom op onze pagina. <br/>
-             Deze site biedt u de mogelijkheid om de info van alle festivals die u nodig hebt te zoeken op 1 centrale site. Organisatoren en muzikanten kunnen hier ook
-            hun eigen pagina aanmaken en alle data up-to-date houden. </p>
-            <p>We hopen met deze site zowel het leven van de festivalganger zelf, als dat van de organisatoren en muzikanten een stuk makkelijker te maken. </p>
-
-            <h2>Upcoming events</h2>
-            <!--Voorbeeld, nog aanpassen met gegevens uit database-->
-            <p><a href="Pukkelpop">Pukkelpop</a> van 16/08/2013 tot 18/08/2013 <br/>
-                Met o.a. <a href="Pukkelpop">Foo Fighters</a> <a href="Pukkelpop">Eminem</a></p>
+            <h1>Login</h1>
+            <form action="Gebruikersprofiel.jsp" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        Gebruiker:
+                    </td>
+                    <td>
+                        <input type="text" name="gebruikersnaam"/>
+                    </td>
+                </tr><tr>
+                    <td>
+                        Wachtwoord:
+                    </td>
+                    <td>
+                        <input type="text" name="wachtwoord"/>
+                    </td>
+                </tr>
+            </table>
+            <a href="wachtwoordVergeten.html">wachtwoord vergeten?</a>
+            <br/>
+            <input type="submit" value="Aanmelden">
+            <br/>
+            <p>Geen account? Registreer als gewone <a href="registreerGebruiker.html">gebruiker</a>
+                of als <a href="registreerOrganisator.html">organisator</a> </p>
+        </form>
         </div>
         <div id="spacer"></div>
         </div>
