@@ -84,3 +84,25 @@ body, html{
     background: url("../Afbeeldingen/AchtergrondBanner.jpg");
 }
 
+#sidebar {
+    width: 20%;
+    border: 1px solid black;
+    float: left;
+    background: url("../Afbeeldingen/AchtergrondBanner.jpg");
+}
+
+#sidebar ul{
+    list-style-type: none;
+}
+
+#sidebar ul.keuzes li:hover, #sidebar ul.keuzes li.geselecteerd {}
+#sidebar ul.keuzes li a {font-size:20px; font-family:  Cambria; text-decoration: none; color:#f2f2f2; margin-top: 10px;  }
+#sidebar ul.keuzes li a:hover , #sidebar ul.keuzes li.geselecteerd a { color:#ff9000; }
+
+
+
+#inhoud{
+    width: 79%;
+    float:  right;
+    border: 1px solid black;
+}
