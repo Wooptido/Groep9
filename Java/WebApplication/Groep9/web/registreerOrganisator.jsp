@@ -26,9 +26,9 @@
             <br/>
             <input type="radio" name="festival" value="nietBestaand">Nieuw festival <input type="text" id="festival"> <br/>
             
-            Wachtwoord <input type="text" id="wachtwoord">
+            Wachtwoord <input type="password" id="wachtwoord">
             <br/>
-            Wachtwoord bevestigen <input type="text" id="wachtwoordBevestigen">
+            Wachtwoord bevestigen <input type="password" id="wachtwoordBevestigen">
             <br/>
             <input type="submit" value="verzenden"/>
         </form>

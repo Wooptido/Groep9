@@ -58,8 +58,8 @@
                 postcode: <input type="text" id="postcode"><br/>
                 telefoon/gsm: <input type="text" id="telefoon"><br/>
                 e-mail: <input type="text" id="email">*<br/>
-                wachtwoord: <input type="text" id="wachtwoord">*<br/>
-                bevestig wachtwoord: <input type="text" id="bevestigWachtwoord">*<br/>  
+                wachtwoord: <input type="password" id="wachtwoord">*<br/>
+                bevestig wachtwoord: <input type="password" id="bevestigWachtwoord">*<br/>  
                 
                 <input type="submit" value="verzenden"/>
                 <br/>

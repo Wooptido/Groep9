@@ -51,7 +51,7 @@
                         Wachtwoord:
                     </td>
                     <td>
-                        <input type="text" name="wachtwoord"/>
+                        <input type="password" name="wachtwoord"/>
                     </td>
                 </tr>
             </table>
