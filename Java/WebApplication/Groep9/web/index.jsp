@@ -4,7 +4,18 @@
     Author     : Tim
 --%>
 
+
+
+<%@page import="persist.Festivals"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import =
+"java.util.Iterator,
+java.util.List,
+hibernate.HibernateUtil,
+org.hibernate.HibernateException,
+org.hibernate.Session,
+org.hibernate.Transaction"%>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -66,6 +77,22 @@
             <!--Voorbeeld, nog aanpassen met gegevens uit database-->
             <p><a href="Pukkelpop">Pukkelpop</a> van 16/08/2013 tot 18/08/2013 <br/>
                 Met o.a. <a href="Pukkelpop">Foo Fighters</a> <a href="Pukkelpop">Eminem</a></p>
+            <%
+                    Session s;
+                    Transaction tx = null;
+                    Festivals festival = new Festivals();
+                    
+                    
+                    
+                    
+                    
+                
+            %>
+            
+            
+            
+            
+            
         </div>
         <div id="spacer"></div>
         </div>

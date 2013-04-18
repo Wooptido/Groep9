@@ -4,7 +4,10 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/groep9_festivals?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/festivals?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
+    <mapping resource="persist/Gebruikers.hbm.xml"/>
+    <mapping resource="persist/Festivals.hbm.xml"/>
+    <mapping resource="persist/Ipadressen.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

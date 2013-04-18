@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18-apr-2013 11:26:00 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="persist.Festivals" table="festivals" catalog="festivals">
+        <id name="festId" type="java.lang.Integer">
+            <column name="fest_id" />
+            <generator class="identity" />
+        </id>
+        <property name="festNaam" type="string">
+            <column name="fest_naam" length="50" not-null="true" />
+        </property>
+        <property name="festBeginDate" type="date">
+            <column name="fest_beginDate" length="10" not-null="true" />
+        </property>
+        <property name="festEindDate" type="date">
+            <column name="fest_eindDate" length="10" not-null="true" />
+        </property>
+        <property name="festLocatie" type="string">
+            <column name="fest_locatie" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
