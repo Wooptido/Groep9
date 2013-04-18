@@ -58,8 +58,8 @@
             <br/>
             <input type="submit" value="Aanmelden">
             <br/>
-            <p>Geen account? Registreer als gewone <a href="registreerGebruiker.html">gebruiker</a>
-                of als <a href="registreerOrganisator.html">organisator</a> </p>
+            <p>Geen account? Registreer als gewone <a href="registreerGebruiker.jsp">gebruiker</a>
+                of als <a href="registreerOrganisator.jsp">organisator</a> </p>
         </form>
         </div>
         <div id="spacer"></div>
