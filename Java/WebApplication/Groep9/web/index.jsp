@@ -41,7 +41,27 @@
              Deze site biedt u de mogelijkheid om de info van alle festivals die u nodig hebt te zoeken op 1 centrale site. Organisatoren en muzikanten kunnen hier ook
             hun eigen pagina aanmaken en alle data up-to-date houden. </p>
             <p>We hopen met deze site zowel het leven van de festivalganger zelf, als dat van de organisatoren en muzikanten een stuk makkelijker te maken. </p>
-
+            <p>
+                <% String ip = request.getHeader("X-Forwarded-For");  
+                    if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+                        ip = request.getHeader("Proxy-Client-IP");  
+                    }  
+                    if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+                        ip = request.getHeader("WL-Proxy-Client-IP");  
+                    }  
+                    if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+                        ip = request.getHeader("HTTP_CLIENT_IP");  
+                    }  
+                    if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+                        ip = request.getHeader("HTTP_X_FORWARDED_FOR");  
+                    }  
+                    if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+                        ip = request.getRemoteAddr();  
+                    }  
+                    out.print(ip);
+                    %>
+                    
+                </p>
             <h2>Upcoming events</h2>
             <!--Voorbeeld, nog aanpassen met gegevens uit database-->
             <p><a href="Pukkelpop">Pukkelpop</a> van 16/08/2013 tot 18/08/2013 <br/>
