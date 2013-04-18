@@ -17,6 +17,28 @@
         <link rel="stylesheet" href="Styles/css3.css">
         <link rel="stylesheet" href="Styles/general.css">
         <link rel="stylesheet" href="Styles/grid.css">
+        <script>
+    function trim(s) 
+    {
+        return s.replace( /^\s*/, "" ).replace( /\s*$/, "" );
+    }
+
+    function validate()
+    {
+        if(trim(document.frmLogin.gebruikersnaam.value)=="")
+        {
+          alert("Login empty");
+          document.frmLogin.gebruikersnaam.focus();
+          return false;
+        }
+        else if(trim(document.frmLogin.wachtwoord.value)=="")
+        {
+          alert("password empty");
+          document.frmLogin.wachtwoord.focus();
+          return false;
+        }
+    }
+</script>
      </head>
         <body>
         <div id="container">
@@ -36,7 +58,7 @@
         </header> 
             <div id="hoofdpaneel">
             <h1>Login</h1>
-            <form action="Gebruikersprofiel.jsp" method="POST">
+            <form name="frmLogin" onSubmit="return validate();" action="doLogin.jsp" method="post">
             <table>
                 <tr>
                     <td>
