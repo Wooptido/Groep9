@@ -91,3 +91,111 @@
 	 background: -moz-radial-gradient(#eee, #ccc); 
 }
 
+body, html{
+    height: 100%;
+}
+
+
+#balk{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-bottom: 0px;
+    background: url("../Afbeeldingen/AchtergrondBanner.jpg");
+    height: 80px;
+    text-align: center;
+}
+
+#balk h1 {display:inline-block;  margin:auto; position:relative; float:left;  text-decoration: none; }
+
+#balk nav {display:inline-block; position: relative; margin-right: auto; margin-left: auto;}
+#balk ul{
+    list-style-type: none;
+}
+#balk ul.menu {margin:28px 0px 0px 0px; display:inline-block;}
+#balk ul.menu li {float:left; line-height:20px; margin:0px 0px 0px 45px;}
+#balk ul.menu li:hover, #balk ul.menu li.current {}
+#balk ul.menu li a {font-size:40px; font-family:  Cambria; text-decoration: none; line-height:30px; color:#f2f2f2; display:inline-block; }
+#balk ul.menu li a:hover , #balk ul.menu li.current a { color:#ff9000; }
+
+.clear {clear:both;
+        display:block;
+        overflow:hidden;
+        visibility:hidden;
+        width:0;
+        height:0}
+
+ #hoofdpaneel{ 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-top:  0px;
+    border-bottom: 0px;
+    background-color: white;
+    width: 70%;
+    min-width: 780px;
+	max-width: 1260px;
+    overflow-x: hidden;
+    margin-top: 30px;
+    text-align: left;
+    height: auto;
+   }
+
+#hoofdpaneel p{
+    font-family: Calibri;
+    font-size: 15px;
+    color: black;
+}
+
+#hoofdpaneel a{
+    font-family: Calibri;
+    font-size: 15px;
+    color: #ff9000;
+}
+
+#hoofdpaneel h1, h2, h3{
+    font-family: Cambria;
+    color: #ff9000; 
+}
+
+#container{
+    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin-bottom: -25px; /* hoogte footer */
+}
+
+#spacer {
+	display: block !important;
+	height: 25px; /* hoogte footer */
+}
+	
+#footer {
+	clear: both;
+	height: 25px; /* hoogte footer */
+    background: url("../Afbeeldingen/AchtergrondBanner.jpg");
+}
+
+#sidebar {
+    width: 20%;
+    border: 1px solid black;
+    float: left;
+    background: url("../Afbeeldingen/AchtergrondBanner.jpg");
+}
+
+#sidebar ul{
+    list-style-type: none;
+}
+
+#sidebar ul.keuzes li:hover, #sidebar ul.keuzes li.geselecteerd {}
+#sidebar ul.keuzes li a {font-size:20px; font-family:  Cambria; text-decoration: none; color:#f2f2f2; margin-top: 10px;  }
+#sidebar ul.keuzes li a:hover , #sidebar ul.keuzes li.geselecteerd a { color:#ff9000; }
+
+
+
+#inhoud{
+    width: 79%;
+    float:  right;
+    border: 1px solid black;
+}

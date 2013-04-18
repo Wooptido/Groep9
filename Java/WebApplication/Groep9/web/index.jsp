@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="Styles/css3.css">
         <link rel="stylesheet" href="Styles/general.css">
         <link rel="stylesheet" href="Styles/grid.css">
-        <link rel="stylesheet" href="Styles/stijl.css">
      </head>
         <body>
         <div id="container">
